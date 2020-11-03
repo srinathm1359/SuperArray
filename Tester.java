@@ -47,5 +47,13 @@ public class Tester {
     System.out.println(first_dynamic.isEmpty());
     first_dynamic.add("apple");
     System.out.println(first_dynamic.isEmpty());
+    //Test toString()
+    System.out.println(first_dynamic.toString());
+    first_dynamic.add("banana");
+    first_dynamic.add("watermelon");
+    first_dynamic.add("kiwi");
+    System.out.println(first_dynamic.toString());
+    first_dynamic.clear();
+    System.out.println(first_dynamic.toString());
   }
 }
