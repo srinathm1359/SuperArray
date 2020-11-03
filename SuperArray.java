@@ -49,4 +49,20 @@ public class SuperArray {
   public boolean isEmpty() {
     return (size == 0);
   }
+
+  public String toString() {
+    if (size == 0) {
+      return "[]";
+    }
+    String toReturn = "[";
+    for (int i = 0; i < size; i++) {
+      toReturn += data[i];
+      if (i == size - 1) {
+        toReturn += "]";
+      } else {
+        toReturn += ", ";
+      }
+    }
+    return toReturn;
+  }
 }
