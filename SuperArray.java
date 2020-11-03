@@ -65,4 +65,13 @@ public class SuperArray {
     }
     return toReturn;
   }
+
+  public boolean contains(String s) {
+    for (int i = 0; i < size; i++) {
+      if (s.equals(data[i])) {
+        return true;
+      }
+    }
+    return false;
+  }
 }
