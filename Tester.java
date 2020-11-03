@@ -48,12 +48,20 @@ public class Tester {
     first_dynamic.add("apple");
     System.out.println(first_dynamic.isEmpty());
     //Test toString()
-    System.out.println(first_dynamic.toString());
+    System.out.println(first_dynamic);
     first_dynamic.add("banana");
     first_dynamic.add("watermelon");
     first_dynamic.add("kiwi");
-    System.out.println(first_dynamic.toString());
+    System.out.println(first_dynamic);
     first_dynamic.clear();
-    System.out.println(first_dynamic.toString());
+    System.out.println(first_dynamic);
+    //Test contains()
+    System.out.println(first_dynamic.contains("banana"));
+    first_dynamic.add("apple");
+    first_dynamic.add("banana");
+    first_dynamic.add("watermelon");
+    first_dynamic.add("kiwi");
+    System.out.println(first_dynamic.contains("banana"));
+    System.out.println(first_dynamic.contains("orange"));
   }
 }
