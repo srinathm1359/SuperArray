@@ -15,5 +15,26 @@ public class Tester {
     //Testing set()
     System.out.println(first_dynamic.set(0,"Bye!"));
     System.out.println(first_dynamic.set(0,"Hello"));
+    //Testing resize() and revised add()
+    first_dynamic.add("alphabet");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("albatross");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("hyena");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("crocodile");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("zebra");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("lion");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("gorilla");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("giraffe");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("horse");
+    System.out.println(first_dynamic.size());
+    first_dynamic.add("anteater");
+    System.out.println(first_dynamic.size());
   }
 }
