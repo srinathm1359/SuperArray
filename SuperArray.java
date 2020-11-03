@@ -45,4 +45,8 @@ public class SuperArray {
     data = new String[10];
     size = 0;
   }
+
+  public boolean isEmpty() {
+    return (size == 0);
+  }
 }
