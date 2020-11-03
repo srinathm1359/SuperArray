@@ -43,5 +43,9 @@ public class Tester {
     //Test clear()
     first_dynamic.clear();
     System.out.println(first_dynamic.size());
+    //Test isEmpty()
+    System.out.println(first_dynamic.isEmpty());
+    first_dynamic.add("apple");
+    System.out.println(first_dynamic.isEmpty());
   }
 }
