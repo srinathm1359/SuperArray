@@ -12,5 +12,8 @@ public class Tester {
     System.out.println(first_dynamic.get(0));
     System.out.println(first_dynamic.get(1));
     System.out.println(first_dynamic.get(2));
+    //Testing set()
+    System.out.println(first_dynamic.set(0,"Bye!"));
+    System.out.println(first_dynamic.set(0,"Hello"));
   }
 }
