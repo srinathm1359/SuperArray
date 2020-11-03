@@ -40,5 +40,8 @@ public class Tester {
     for (int i = 0; i < first_dynamic.size(); i++) {
       System.out.println(first_dynamic.get(i));
     }
+    //Test clear()
+    first_dynamic.clear();
+    System.out.println(first_dynamic.size());
   }
 }
