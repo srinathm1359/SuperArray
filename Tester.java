@@ -35,6 +35,10 @@ public class Tester {
     first_dynamic.add("horse");
     System.out.println(first_dynamic.size());
     first_dynamic.add("anteater");
+    //Should print 12 entries
     System.out.println(first_dynamic.size());
+    for (int i = 0; i < first_dynamic.size(); i++) {
+      System.out.println(first_dynamic.get(i));
+    }
   }
 }
