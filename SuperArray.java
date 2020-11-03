@@ -40,4 +40,9 @@ public class SuperArray {
     }
     data = array;
   }
+
+  public void clear() {
+    data = new String[10];
+    size = 0;
+  }
 }
