@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 public class Tester {
   public static void main(String[] args) {
     SuperArray first_dynamic = new SuperArray();
@@ -74,6 +74,7 @@ public class Tester {
     System.out.println(first_dynamic.indexOf("apple"));
     System.out.println(first_dynamic.indexOf("orange"));
     System.out.println(first_dynamic.indexOf("kiwi"));
-
+    //Test toArray()
+    System.out.println(Arrays.toString(first_dynamic.toArray()));
   }
 }
