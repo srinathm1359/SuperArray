@@ -63,5 +63,8 @@ public class Tester {
     first_dynamic.add("kiwi");
     System.out.println(first_dynamic.contains("banana"));
     System.out.println(first_dynamic.contains("orange"));
+    //Test add() at index
+    first_dynamic.add(5, "orange");
+    System.out.println(first_dynamic);
   }
 }
