@@ -64,7 +64,11 @@ public class Tester {
     System.out.println(first_dynamic.contains("banana"));
     System.out.println(first_dynamic.contains("orange"));
     //Test add() at index
-    first_dynamic.add(5, "orange");
+    first_dynamic.add(3, "orange");
     System.out.println(first_dynamic);
+    //Test remove() at index
+    System.out.println(first_dynamic.remove(2));
+    System.out.println(first_dynamic);
+    first_dynamic.remove(1); System.out.println(first_dynamic);
   }
 }
