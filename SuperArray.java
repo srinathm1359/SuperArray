@@ -94,4 +94,22 @@ public class SuperArray {
       }
       size++;
     }
+
+  public String remove(int index) {
+    if (size > index) {
+      String[] second_data = new String[data.length - 1];
+      for (int i = 0; i < index; i++) {
+        second_data[i] = data[i];
+      }
+      for (int i = index; i < data.length - 1; i++) {
+        second_data[i] = data[i+1];
+      }
+      String value = data[index];
+      data = second_data;
+      size--;
+      return value;
+    }
+    size--;
+    return null;
+  }
 }
