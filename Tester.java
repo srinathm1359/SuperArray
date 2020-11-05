@@ -70,5 +70,10 @@ public class Tester {
     System.out.println(first_dynamic.remove(2));
     System.out.println(first_dynamic);
     first_dynamic.remove(1); System.out.println(first_dynamic);
+    //Test indexOf()
+    System.out.println(first_dynamic.indexOf("apple"));
+    System.out.println(first_dynamic.indexOf("orange"));
+    System.out.println(first_dynamic.indexOf("kiwi"));
+
   }
 }
