@@ -1,6 +1,11 @@
 public class Demo {
   public static void removeDuplicates(SuperArray s) {
-    
+    for (int i = s.size() - 1; i >= 0; i--) {
+      boolean isFirst = (s.indexOf(s.get(i)) == i);
+      if (!isFirst) {
+        s.remove(i);
+      }
+    }
   }
   public static void main(String[] args) {
     SuperArray words = new SuperArray();
