@@ -34,7 +34,7 @@ public class SuperArray {
   }
 
   private void resize() {
-    String[] array = new String[size + 1];
+    String[] array = new String[size + size / 10];
     for (int i = 0; i < size; i++) {
       array[i] = data[i];
     }
@@ -79,4 +79,19 @@ public class SuperArray {
     data = new String[initialCapacity];
     size = 0;
   }
+
+  public void add(int index, String element) {
+    if (size == data.length) {
+      resize();
+    }
+      String[] data_afterAdd = new String[size - index];
+      for (int i = 0; i < data_afterAdd.length; i++) {
+        data_afterAdd[i] = data[i + index];
+      }
+      data[index] = element;
+      for (int i = index + 1; i < size + 1; i++) {
+        data[i] = data_afterAdd[i - index - 1];
+      }
+      size++;
+    }
 }
