@@ -91,5 +91,33 @@ public class Tester {
     System.out.println(first_dynamic.lastIndexOf("apple"));
     System.out.println(first_dynamic.indexOf("orange"));
     System.out.println(first_dynamic.lastIndexOf("orange"));
+    //Test equals()
+    SuperArray fruits2 = new SuperArray(8);
+    fruits2.add("apple");
+    fruits2.add("orange");
+    fruits2.add("kiwi");
+    fruits2.add("apple");
+    fruits2.add("orange");
+    fruits2.add("banana");
+    fruits2.add("watermelon");
+    fruits2.add("kiwi");
+    System.out.println(fruits2.equals(first_dynamic));
+    fruits2 = new SuperArray(10);
+    fruits2.add("apple");
+    fruits2.add("orange");
+    fruits2.add("kiwi");
+    fruits2.add("apple");
+    fruits2.add("orange");
+    fruits2.add("banana");
+    fruits2.add("watermelon");
+    fruits2.add("kiwi");
+    System.out.println(fruits2.equals(first_dynamic));
+    SuperArray next_test = new SuperArray();
+    System.out.println(next_test.equals(first_dynamic));
+    next_test.add("kiwi");
+    next_test.add("apple");
+    next_test.add("orange");
+    next_test.add("banana");
+    System.out.println(next_test.equals(first_dynamic));
   }
 }
