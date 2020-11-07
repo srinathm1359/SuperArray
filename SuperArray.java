@@ -129,6 +129,7 @@ public class SuperArray {
     }
     return arrayForm;
   }
+
   public int lastIndexOf(String value) {
     for (int i = size - 1; i >= 0; i--) {
       if (data[i].equals(value)) {
@@ -136,5 +137,17 @@ public class SuperArray {
       }
     }
     return -1;
+  }
+
+  public boolean equals(SuperArray other) {
+    if (size != other.size()) {
+      return false;
+    }
+    for (int i = 0; i < size; i++) {
+      if (data[i] != other.get(i)) {
+        return false;
+      }
+    }
+    return true;
   }
 }
