@@ -76,5 +76,20 @@ public class Tester {
     System.out.println(first_dynamic.indexOf("kiwi"));
     //Test toArray()
     System.out.println(Arrays.toString(first_dynamic.toArray()));
+    //Test lastIndexOf()
+    first_dynamic.add("apple");
+    first_dynamic.add("orange");
+    first_dynamic.add("banana");
+    first_dynamic.add("watermelon");
+    first_dynamic.add("kiwi");
+    System.out.println(first_dynamic);
+    System.out.println(first_dynamic.indexOf("banana"));
+    System.out.println(first_dynamic.lastIndexOf("banana"));
+    System.out.println(first_dynamic.indexOf("kiwi"));
+    System.out.println(first_dynamic.lastIndexOf("kiwi"));
+    System.out.println(first_dynamic.indexOf("apple"));
+    System.out.println(first_dynamic.lastIndexOf("apple"));
+    System.out.println(first_dynamic.indexOf("orange"));
+    System.out.println(first_dynamic.lastIndexOf("orange"));
   }
 }
