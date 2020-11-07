@@ -19,6 +19,37 @@ public class Demo {
     }
     return overlap;
   }
+  public static SuperArray zip(SuperArray a, SuperArray b) {
+    int size_a = a.size();
+    int size_b = b.size();
+    int min_size; int max_size;
+    if (size_a < size_b) {
+      min_size = size_a;
+      max_size = size_b;
+    } else {
+      min_size = size_b;
+      max_size = size_a;
+    }
+    SuperArray merged = new SuperArray(size_a + size_b);
+    for (int i = 0; i < 2*min_size; i++) {
+      if (i%2 == 0) {
+        merged.add(a.get(i/2));
+      }
+      if (i%2 != 0) {
+        merged.add(b.get(i/2));
+      }
+    }
+    if (size_a == min_size) {
+      for (int i = min_size; i < max_size; i++) {
+        merged.add(b.get(i));
+      }
+    } else {
+      for (int i = min_size; i < max_size; i++) {
+        merged.add(a.get(i));
+      }
+    }
+    return merged;
+  }
   public static void main(String[] args) {
     SuperArray words = new SuperArray();
     //grouped to save vertical space
@@ -36,5 +67,13 @@ public class Demo {
     words2.add("una");    words2.add("ebi");     words2.add("toro");
     System.out.println(words2);
     System.out.println(findOverlap(words, words2));
+    // Testng zip()
+    SuperArray fruits = new SuperArray();
+    fruits.add("apple"); fruits.add("orange"); fruits.add("kiwi");
+    fruits.add("apple"); fruits.add("orange"); fruits.add("banana");
+    fruits.add("watermelon"); fruits.add("kiwi");
+    System.out.println(fruits);
+    System.out.println(zip(fruits, words));
+    System.out.println(zip(words, fruits));
   }
 }
