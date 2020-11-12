@@ -108,6 +108,9 @@ public class SuperArray {
     }
 
   public String remove(int index) {
+    if (index < 0 || index >= size()) {
+      throw new IndexOutOfBoundsException("Index " + index + " must be in between 0 and " + (size() - 1) + " inclusive.");
+    }
     if (size > index) {
       String[] second_data = new String[data.length - 1];
       for (int i = 0; i < index; i++) {
