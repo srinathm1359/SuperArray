@@ -90,6 +90,9 @@ public class SuperArray {
   }
 
   public void add(int index, String element) {
+    if (index < 0 || index > size()) {
+      throw new IndexOutOfBoundsException("Index " + index + " must be in between 0 and " + size() + " inclusive.");
+    }
     if (size == data.length) {
       resize();
     }
