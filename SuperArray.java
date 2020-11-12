@@ -31,6 +31,9 @@ public class SuperArray {
   }
 
   public String set(int index, String element) {
+    if (index < 0 || index >= size()) {
+      throw new IndexOutOfBoundsException("Index " + index + " must be in between 0 and " + (size() - 1) + " inclusive.");
+    }
     String toReturn = data[index];
     data[index] = element;
     return toReturn;
